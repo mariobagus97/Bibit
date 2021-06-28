@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D31499FCED9F19DE56747DBA /* Pods_Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9966DE93EFE7320A3A187ABD /* Pods_Crypto.framework */; };
+		ED4714FB2639381E004BC112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4714FA2639381E004BC112 /* AppDelegate.swift */; };
+		ED4714FD2639381E004BC112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4714FC2639381E004BC112 /* SceneDelegate.swift */; };
+		ED47150426393821004BC112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED47150326393821004BC112 /* Assets.xcassets */; };
+		ED47150726393821004BC112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED47150526393821004BC112 /* LaunchScreen.storyboard */; };
+		ED47151426393881004BC112 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47151226393881004BC112 /* WatchListViewController.swift */; };
+		ED47151526393881004BC112 /* WatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED47151326393881004BC112 /* WatchListViewController.xib */; };
+		ED47152326394172004BC112 /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47152126394172004BC112 /* WatchListTableViewCell.swift */; };
+		ED47152426394172004BC112 /* WatchListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED47152226394172004BC112 /* WatchListTableViewCell.xib */; };
+		ED47152C26394A7A004BC112 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47152B26394A7A004BC112 /* BaseViewController.swift */; };
+		ED47156426394E91004BC112 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47156326394E91004BC112 /* BaseViewModel.swift */; };
+		ED47156A26394FD3004BC112 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47156926394FD3004BC112 /* Container.swift */; };
+		ED47157026395043004BC112 /* WatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47156F26395043004BC112 /* WatchListViewModel.swift */; };
+		ED471576263958FB004BC112 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED471575263958FB004BC112 /* CryptoRepository.swift */; };
+		ED47157A2639598E004BC112 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4715792639598E004BC112 /* CryptoService.swift */; };
+		ED47157D26395A63004BC112 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47157C26395A63004BC112 /* URLBuilder.swift */; };
+		ED47158B263963FF004BC112 /* WatchListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47158A263963FF004BC112 /* WatchListResponse.swift */; };
+		ED4715AF2639B551004BC112 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4715AE2639B551004BC112 /* Crypto.swift */; };
+		ED471602263A043E004BC112 /* NewsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED471601263A043E004BC112 /* NewsListResponse.swift */; };
+		ED47161D263A10F7004BC112 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47161C263A10F6004BC112 /* News.swift */; };
+		ED471620263A6845004BC112 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47161F263A6845004BC112 /* NewsListViewModel.swift */; };
+		ED471624263A698A004BC112 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED471622263A698A004BC112 /* NewsListViewController.swift */; };
+		ED471625263A698A004BC112 /* NewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED471623263A698A004BC112 /* NewsListViewController.xib */; };
+		ED47162C263A6FBE004BC112 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED47162A263A6FBE004BC112 /* NewsListTableViewCell.swift */; };
+		ED47162D263A6FBE004BC112 /* NewsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED47162B263A6FBE004BC112 /* NewsListTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E10B23F886E79EE6692501E /* Pods-Crypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto.release.xcconfig"; path = "Target Support Files/Pods-Crypto/Pods-Crypto.release.xcconfig"; sourceTree = "<group>"; };
+		7CB8C88032E837F2FD8C7B97 /* Pods-Crypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto.debug.xcconfig"; path = "Target Support Files/Pods-Crypto/Pods-Crypto.debug.xcconfig"; sourceTree = "<group>"; };
+		9966DE93EFE7320A3A187ABD /* Pods_Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4714F72639381E004BC112 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4714FA2639381E004BC112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED4714FC2639381E004BC112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED47150326393821004BC112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED47150626393821004BC112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED47150826393821004BC112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED47151226393881004BC112 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
+		ED47151326393881004BC112 /* WatchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchListViewController.xib; sourceTree = "<group>"; };
+		ED47152126394172004BC112 /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
+		ED47152226394172004BC112 /* WatchListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchListTableViewCell.xib; sourceTree = "<group>"; };
+		ED47152B26394A7A004BC112 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ED47156326394E91004BC112 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		ED47156926394FD3004BC112 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		ED47156F26395043004BC112 /* WatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewModel.swift; sourceTree = "<group>"; };
+		ED471575263958FB004BC112 /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
+		ED4715792639598E004BC112 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
+		ED47157C26395A63004BC112 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		ED47158A263963FF004BC112 /* WatchListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListResponse.swift; sourceTree = "<group>"; };
+		ED4715AE2639B551004BC112 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		ED471601263A043E004BC112 /* NewsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListResponse.swift; sourceTree = "<group>"; };
+		ED47161C263A10F6004BC112 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		ED47161F263A6845004BC112 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		ED471622263A698A004BC112 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		ED471623263A698A004BC112 /* NewsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListViewController.xib; sourceTree = "<group>"; };
+		ED47162A263A6FBE004BC112 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
+		ED47162B263A6FBE004BC112 /* NewsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED4714F42639381E004BC112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31499FCED9F19DE56747DBA /* Pods_Crypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D08905C8F15D1C04EE9C0DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9966DE93EFE7320A3A187ABD /* Pods_Crypto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		500A7815129C2867D88BA693 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CB8C88032E837F2FD8C7B97 /* Pods-Crypto.debug.xcconfig */,
+				6E10B23F886E79EE6692501E /* Pods-Crypto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED4714EE2639381E004BC112 = {
+			isa = PBXGroup;
+			children = (
+				ED4714F92639381E004BC112 /* Crypto */,
+				ED4714F82639381E004BC112 /* Products */,
+				500A7815129C2867D88BA693 /* Pods */,
+				1D08905C8F15D1C04EE9C0DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED4714F82639381E004BC112 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED4714F72639381E004BC112 /* Crypto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED4714F92639381E004BC112 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				ED47156726394FBA004BC112 /* Data */,
+				ED47156226394DEA004BC112 /* Core */,
+				ED4715112639384B004BC112 /* View */,
+				ED4714FA2639381E004BC112 /* AppDelegate.swift */,
+				ED4714FC2639381E004BC112 /* SceneDelegate.swift */,
+				ED47150326393821004BC112 /* Assets.xcassets */,
+				ED47150526393821004BC112 /* LaunchScreen.storyboard */,
+				ED47150826393821004BC112 /* Info.plist */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		ED4715112639384B004BC112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED47152B26394A7A004BC112 /* BaseViewController.swift */,
+				ED47151D26393A02004BC112 /* NewsList */,
+				ED47151B2639395F004BC112 /* WatchList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED47151B2639395F004BC112 /* WatchList */ = {
+			isa = PBXGroup;
+			children = (
+				ED471628263A6F74004BC112 /* Cell */,
+				ED47151226393881004BC112 /* WatchListViewController.swift */,
+				ED47151326393881004BC112 /* WatchListViewController.xib */,
+			);
+			path = WatchList;
+			sourceTree = "<group>";
+		};
+		ED47151D26393A02004BC112 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				ED471629263A6F8B004BC112 /* Cell */,
+				ED471622263A698A004BC112 /* NewsListViewController.swift */,
+				ED471623263A698A004BC112 /* NewsListViewController.xib */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		ED47156226394DEA004BC112 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ED47156E26395028004BC112 /* Models */,
+				ED47156D26395012004BC112 /* ViewModels */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ED47156726394FBA004BC112 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ED47158D26396406004BC112 /* Response */,
+				ED471574263950A7004BC112 /* Repositories */,
+				ED471573263950A1004BC112 /* Services */,
+				ED47156826394FC0004BC112 /* Helpers */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ED47156826394FC0004BC112 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ED47156926394FD3004BC112 /* Container.swift */,
+				ED47157C26395A63004BC112 /* URLBuilder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ED47156D26395012004BC112 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ED47156326394E91004BC112 /* BaseViewModel.swift */,
+				ED47156F26395043004BC112 /* WatchListViewModel.swift */,
+				ED47161F263A6845004BC112 /* NewsListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ED47156E26395028004BC112 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED4715AE2639B551004BC112 /* Crypto.swift */,
+				ED47161C263A10F6004BC112 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED471573263950A1004BC112 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED4715792639598E004BC112 /* CryptoService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED471574263950A7004BC112 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				ED471575263958FB004BC112 /* CryptoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ED47158D26396406004BC112 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				ED47158A263963FF004BC112 /* WatchListResponse.swift */,
+				ED471601263A043E004BC112 /* NewsListResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		ED471628263A6F74004BC112 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ED47152126394172004BC112 /* WatchListTableViewCell.swift */,
+				ED47152226394172004BC112 /* WatchListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ED471629263A6F8B004BC112 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ED47162A263A6FBE004BC112 /* NewsListTableViewCell.swift */,
+				ED47162B263A6FBE004BC112 /* NewsListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED4714F62639381E004BC112 /* Crypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED47150B26393821004BC112 /* Build configuration list for PBXNativeTarget "Crypto" */;
+			buildPhases = (
+				7B877F3A7E73135ACC191D51 /* [CP] Check Pods Manifest.lock */,
+				ED4714F32639381E004BC112 /* Sources */,
+				ED4714F42639381E004BC112 /* Frameworks */,
+				ED4714F52639381E004BC112 /* Resources */,
+				F147468161DBE64722EA9901 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crypto;
+			productName = Crypto;
+			productReference = ED4714F72639381E004BC112 /* Crypto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED4714EF2639381E004BC112 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					ED4714F62639381E004BC112 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = ED4714F22639381E004BC112 /* Build configuration list for PBXProject "Crypto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED4714EE2639381E004BC112;
+			productRefGroup = ED4714F82639381E004BC112 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED4714F62639381E004BC112 /* Crypto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED4714F52639381E004BC112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED47151526393881004BC112 /* WatchListViewController.xib in Resources */,
+				ED47152426394172004BC112 /* WatchListTableViewCell.xib in Resources */,
+				ED47162D263A6FBE004BC112 /* NewsListTableViewCell.xib in Resources */,
+				ED471625263A698A004BC112 /* NewsListViewController.xib in Resources */,
+				ED47150726393821004BC112 /* LaunchScreen.storyboard in Resources */,
+				ED47150426393821004BC112 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B877F3A7E73135ACC191D51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crypto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F147468161DBE64722EA9901 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED4714F32639381E004BC112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED47152C26394A7A004BC112 /* BaseViewController.swift in Sources */,
+				ED471602263A043E004BC112 /* NewsListResponse.swift in Sources */,
+				ED4714FB2639381E004BC112 /* AppDelegate.swift in Sources */,
+				ED47161D263A10F7004BC112 /* News.swift in Sources */,
+				ED47157026395043004BC112 /* WatchListViewModel.swift in Sources */,
+				ED47157D26395A63004BC112 /* URLBuilder.swift in Sources */,
+				ED47152326394172004BC112 /* WatchListTableViewCell.swift in Sources */,
+				ED471620263A6845004BC112 /* NewsListViewModel.swift in Sources */,
+				ED47158B263963FF004BC112 /* WatchListResponse.swift in Sources */,
+				ED47151426393881004BC112 /* WatchListViewController.swift in Sources */,
+				ED47162C263A6FBE004BC112 /* NewsListTableViewCell.swift in Sources */,
+				ED47156A26394FD3004BC112 /* Container.swift in Sources */,
+				ED471576263958FB004BC112 /* CryptoRepository.swift in Sources */,
+				ED4715AF2639B551004BC112 /* Crypto.swift in Sources */,
+				ED4714FD2639381E004BC112 /* SceneDelegate.swift in Sources */,
+				ED47157A2639598E004BC112 /* CryptoService.swift in Sources */,
+				ED47156426394E91004BC112 /* BaseViewModel.swift in Sources */,
+				ED471624263A698A004BC112 /* NewsListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED47150526393821004BC112 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED47150626393821004BC112 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED47150926393821004BC112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED47150A26393821004BC112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED47150C26393821004BC112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB8C88032E837F2FD8C7B97 /* Pods-Crypto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UQ525BB72;
+				INFOPLIST_FILE = Crypto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bibit.Crypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ED47150D26393821004BC112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E10B23F886E79EE6692501E /* Pods-Crypto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UQ525BB72;
+				INFOPLIST_FILE = Crypto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bibit.Crypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED4714F22639381E004BC112 /* Build configuration list for PBXProject "Crypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED47150926393821004BC112 /* Debug */,
+				ED47150A26393821004BC112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED47150B26393821004BC112 /* Build configuration list for PBXNativeTarget "Crypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED47150C26393821004BC112 /* Debug */,
+				ED47150D26393821004BC112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED4714EF2639381E004BC112 /* Project object */;
+}

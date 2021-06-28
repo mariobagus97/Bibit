@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="WatchListTableViewCell" customModule="Crypto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rTh-Ax-t1n">
+                        <rect key="frame" x="10" y="5" width="51.5" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmJ-sC-7dZ">
+                                <rect key="frame" x="0.0" y="0.0" width="51.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EU-Pr-DeK">
+                                <rect key="frame" x="0.0" y="32.5" width="37" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="uyn-gJ-rTh">
+                        <rect key="frame" x="215" y="5" width="100" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmk-6w-LP7">
+                                <rect key="frame" x="56.5" y="0.0" width="43.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1f-CL-jZu">
+                                <rect key="frame" x="0.0" y="32.5" width="100" height="32.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boc-wr-IQe">
+                                        <rect key="frame" x="5" y="5" width="90" height="22.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="boc-wr-IQe" firstAttribute="top" secondItem="w1f-CL-jZu" secondAttribute="top" constant="5" id="Nfg-uz-IMU"/>
+                                    <constraint firstAttribute="trailing" secondItem="boc-wr-IQe" secondAttribute="trailing" constant="5" id="cIT-Bv-ISO"/>
+                                    <constraint firstAttribute="bottom" secondItem="boc-wr-IQe" secondAttribute="bottom" constant="5" id="keS-1g-HTx"/>
+                                    <constraint firstItem="boc-wr-IQe" firstAttribute="leading" secondItem="w1f-CL-jZu" secondAttribute="leading" constant="5" id="s6g-cY-u5F"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uyn-gJ-rTh" secondAttribute="bottom" constant="5" id="9PA-DL-7bm"/>
+                    <constraint firstAttribute="trailing" secondItem="uyn-gJ-rTh" secondAttribute="trailing" constant="5" id="Pvn-wd-dUF"/>
+                    <constraint firstItem="uyn-gJ-rTh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="YgC-gK-XxP"/>
+                    <constraint firstItem="rTh-Ax-t1n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ff0-E8-3J9"/>
+                    <constraint firstAttribute="bottom" secondItem="rTh-Ax-t1n" secondAttribute="bottom" constant="5" id="o9t-K6-QGU"/>
+                    <constraint firstItem="rTh-Ax-t1n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="sz3-om-E0y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblCryptoFullName" destination="0EU-Pr-DeK" id="xGm-TL-QET"/>
+                <outlet property="lblCryptoGain" destination="boc-wr-IQe" id="CQM-Zy-8LV"/>
+                <outlet property="lblCryptoName" destination="OmJ-sC-7dZ" id="srG-w3-Rxj"/>
+                <outlet property="lblCryptoPrice" destination="vmk-6w-LP7" id="fMz-L1-GMC"/>
+                <outlet property="viewTickerColor" destination="w1f-CL-jZu" id="rlp-kT-cs9"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="98.102678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
